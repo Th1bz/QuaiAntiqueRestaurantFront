@@ -80,6 +80,31 @@ p{
     }
 }
 
+.menu-card {
+    // border: 5px solid $dark;
+    border-radius: 30px;
+    position: relative;
+    padding: 20px;
+    // box-shadow: 0 0 6px 1px;
+    background: rgb(255,241,215);
+    background: linear-gradient(180deg, rgba(255,241,215,0.55) 0%, rgba(255,255,255,1) 90%); 
+    color: $dark;
+
+    img {
+        position: absolute;
+        top: -20px;
+        right: -20px;
+        width: 60px;
+    }
+
+    li {
+        padding: 5px;
+    }
+
+}
+
+
+
 @media (max-width: 780px) {
 
     main{

@@ -12036,6 +12036,24 @@ p {
   opacity: 0;
 }
 
+.menu-card {
+  border-radius: 30px;
+  position: relative;
+  padding: 20px;
+  background: rgb(255, 241, 215);
+  background: linear-gradient(180deg, rgba(255, 241, 215, 0.55) 0%, rgb(255, 255, 255) 90%);
+  color: #392C1E;
+}
+.menu-card img {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 60px;
+}
+.menu-card li {
+  padding: 5px;
+}
+
 @media (max-width: 780px) {
   main {
     margin-bottom: 300px;
