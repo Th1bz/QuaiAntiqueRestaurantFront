@@ -12071,6 +12071,12 @@ p {
   color: #906427;
 }
 
+.allReservations a {
+  display: block;
+  color: #292222;
+  padding: 10px;
+}
+
 @media (max-width: 780px) {
   main {
     margin-bottom: 330px;
