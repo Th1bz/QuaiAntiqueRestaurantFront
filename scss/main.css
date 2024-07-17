@@ -11989,6 +11989,7 @@ p {
 
 .hero-scene {
   position: relative;
+  margin-bottom: 15px;
 }
 .hero-scene::before {
   content: "";
@@ -12054,8 +12055,12 @@ p {
   padding: 5px;
 }
 
+.form-label {
+  color: #906427;
+}
+
 @media (max-width: 780px) {
   main {
-    margin-bottom: 300px;
+    margin-bottom: 330px;
   }
 }/*# sourceMappingURL=main.css.map */

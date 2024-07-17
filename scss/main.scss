@@ -25,6 +25,7 @@ p{
 
 .hero-scene {
     position: relative;
+    margin-bottom: 15px;
     &::before{
         content: "";
         position: absolute;
@@ -103,11 +104,13 @@ p{
 
 }
 
-
+.form-label {
+    color: $primary;
+}
 
 @media (max-width: 780px) {
 
     main{
-        margin-bottom: 300px;
+        margin-bottom: 330px;
     }
 }
