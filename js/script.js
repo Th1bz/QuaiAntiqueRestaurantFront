@@ -61,7 +61,7 @@ function showAndHideElementsForRoles() {
   const userConnected = isConnected();
   const role = getRole();
 
-  let allElementsToEdit = document.querySelectorAll("[data-show");
+  let allElementsToEdit = document.querySelectorAll("[data-show]");
 
   allElementsToEdit.forEach((element) => {
     switch (element.dataset.show) {
