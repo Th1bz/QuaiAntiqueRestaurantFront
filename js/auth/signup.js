@@ -120,7 +120,7 @@ let requestOptions = {
   redirect: "follow",
 };
 
-fetch("http://127.0.0.1:8000/api/registration", requestOptions)
+fetch(apiUrl+"registration", requestOptions)
 .then(response => {
   if(response.ok){
     return response.json();
@@ -128,7 +128,7 @@ fetch("http://127.0.0.1:8000/api/registration", requestOptions)
      alert("Erreur lors de l'inscription");
   }
 })
-  .then((result) => {
+  .then(result => {
     alert("Bravo "+dataForm.get("prenom")+", vous êtes maintenant inscrit, vous pouvez vous connecter.");
     document.location.href="/signin";
   })

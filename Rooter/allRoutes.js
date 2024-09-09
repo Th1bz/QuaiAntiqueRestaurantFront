@@ -34,7 +34,7 @@ export const allRoutes = [
     "Vos réservations",
     "/pages/reservations/allResa.html",
     ["client"],
-    "/js/auth/reserver.js"
+    "/js/auth/allResa.js"
   ),
   new Route(
     "/reserver",
