@@ -19,15 +19,12 @@ export const allRoutes = [
     ["disconnected"],
     "/js/auth/signup.js"
   ),
-  new Route("/account", "Mon compte", "/pages/auth/account.html", [
-    "client",
-    "admin",
-  ]),
+  new Route("/account", "Mon compte", "/pages/auth/account.html", ["connected"]),
   new Route(
     "/editPassword",
     "Changement de mot de passe",
     "/pages/auth/editPassword.html",
-    ["client", "admin"]
+    ["client"]
   ),
   new Route(
     "/allResa",
