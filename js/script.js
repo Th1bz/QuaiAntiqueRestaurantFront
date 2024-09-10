@@ -86,9 +86,41 @@ function showAndHideElementsForRoles() {
   });
 }
 
+// Sécurisation de la faille XSS ----------------------------
 
 function sanitizeHtml(text){
   const tempHtml = document.createElement('div');
   tempHtml.textContent = text;
   return tempHtml.innerHTML;
+}
+
+
+// Récupération des information de l'utilisateur ------------------
+
+function getInfosUser(){
+
+  let myHeaders = new Headers();
+  myHeaders.append("X-AUTH-TOKEN", getToken());
+  
+  let requestOptions = {
+    method: "GET",
+    headers: myHeaders,
+    redirect: "follow",
+  };
+
+  fetch(apiUrl+"account/me", requestOptions)
+  .then(response =>{
+    if(response.ok){
+      return response.json();
+    }
+    else{
+      console.log("Impossible de récupérer les informations utilisateur");
+    }
+  })
+  .then(result => {
+    return result;
+})
+.catch(error =>{
+  console.error("erreur lors de la récupération des données utilisateur", error);
+});
 }
