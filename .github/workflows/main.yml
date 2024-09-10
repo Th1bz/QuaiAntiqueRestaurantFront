@@ -14,10 +14,11 @@ jobs:
         server: ftp-quaiantiqueth1bz.alwaysdata.net
         username: quaiantiqueth1bz
         password: ${{ secrets.ftp_password }}
+        server-dir: /www/
         exclude: |
           **/.git*
           **/.git*/**
           **/node_modules/bootstrap/scss/**
           **/node_modules/bootstrap/js/**
           **/node_modules/bootstrap-icons/icons/**  
-        server-dir: /www/
+        
