@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Get latest code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v3
 
     - name: 📂 Install dependencies
       uses: actions/setup-node@v2
@@ -15,18 +15,17 @@ jobs:
 
     - name: 📂 Install npm dependencies
       run: npm install
-
+    
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ssh-quaiantiqueth1bz.alwaysdata.net
+        server: ftp-quaiantiqueth1bz.alwaysdata.net
         username: quaiantiqueth1bz
-        password: ${{ secrets.sftp-password }}
-        port: 22 # todo replace with your web hosts ftps port
-        server-dir: /www/
+        password : ${{ secrets.ftp_password }}
         exclude: |
           **/.git*
           **/.git*/**
           **/node_modules/bootstrap/scss/**
           **/node_modules/bootstrap/js/**
-          **/node_modules/bootstrap-icons/icons/** 
+          **/node_modules/bootstrap-icons/icons/**  
+        server-dir: /www/
