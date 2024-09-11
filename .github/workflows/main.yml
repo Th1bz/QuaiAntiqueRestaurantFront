@@ -22,6 +22,8 @@ jobs:
         server: ftp-quaiantiqueth1bz.alwaysdata.net
         username: quaiantiqueth1bz
         password : ${{ secrets.ftp_password }}
+        protocol: ftps
+        port: 990
         exclude: |
           **/.git*
           **/.git*/**
