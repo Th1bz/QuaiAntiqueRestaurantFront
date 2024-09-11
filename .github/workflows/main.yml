@@ -19,14 +19,12 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server: ftp-quaiantiqueth1bz.alwaysdata.net
+        server: ssh-quaiantiqueth1bz.alwaysdata.net
         username: quaiantiqueth1bz
         password: ${{ secrets.ftp_password }}
         protocol: ftps
-        port: 990 # todo replace with your web hosts ftps port
+        port: 22 # todo replace with your web hosts ftps port
         server-dir: /www/
-        log-level: verbose
-        timeout: 60000
         exclude: |
           **/.git*
           **/.git*/**
