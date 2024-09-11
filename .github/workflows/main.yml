@@ -19,12 +19,12 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        FTP_SERVER: ${{ secrets.ftp_server }}
-        FTP_USERNAME: ${{ secrets.ftp_username }}
+        server: ${{ secrets.ftp_server }}
+        username: ${{ secrets.ftp_username }}
         password : ${{ secrets.ftp_password }}
         protocol: sftp
         port: 22
-        ARGS: --verbose
+        args: --verbose
         exclude: |
           **/.git*
           **/.git*/**
