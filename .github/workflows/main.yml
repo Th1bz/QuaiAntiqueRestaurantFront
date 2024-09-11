@@ -21,7 +21,7 @@ jobs:
       with:
         server: ssh-quaiantiqueth1bz.alwaysdata.net
         username: quaiantiqueth1bz
-        password: ${{ secrets.ftp-password }}
+        password: ${{ secrets.sftp-password }}
         port: 22 # todo replace with your web hosts ftps port
         server-dir: /www/
         exclude: |
