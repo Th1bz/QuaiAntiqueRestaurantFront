@@ -25,6 +25,8 @@ jobs:
         protocol: ftps
         port: 990 # todo replace with your web hosts ftps port
         server-dir: /www/
+        log-level: verbose
+        timeout: 60000
         exclude: |
           **/.git*
           **/.git*/**
