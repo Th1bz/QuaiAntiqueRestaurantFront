@@ -19,10 +19,9 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ssh-quaiantiqueth1bz.alwaysdata.net
+        server: ftp-quaiantiqueth1bz.alwaysdata.net
         username: quaiantiqueth1bz
         password : ${{ secrets.ftp_password }}
-        port: 21
         exclude: |
           **/.git*
           **/.git*/**
